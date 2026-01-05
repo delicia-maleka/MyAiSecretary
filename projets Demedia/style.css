@@ -1,0 +1,1286 @@
+
+
+/*------------PAGE D'ACCEUIL----------------*/
+
+
+ html#id	
+	{
+		margin : 0;
+		padding:0;
+		border:0;
+		height : 100vh;
+		width:100%;
+		 
+		
+		
+	}
+
+body#acceuil /*comme ca je peux traiter les body séparement vu que jai mis un id unique heheheeeee*/
+	{
+		
+		background: rgb(255,247,200);
+		background: linear-gradient(90deg, rgba(255,247,200,1) 12%, rgba(255,244,169,1) 45%, rgba(255,244,173,1) 81%, rgba(255,234,185,1) 93%); 
+		background-size:cover;
+		width:100vw;
+		height:100vh;
+		margin:0;
+	}
+	
+.page1
+	{
+		display: grid; 
+		grid-gap : 1em; /* pour espacer les block entre eux */
+		grid-template-columns: 100%;
+		grid-template-rows: 200px 400px 1fr;
+		grid-template-areas:
+		". a b"
+		"f f f ";
+	  height : 100vh;
+	  max-width:570px;
+	}
+.head 
+	{
+		position:absolute;
+		top:10px;
+		left:10px;
+		
+	}
+.head a
+	{
+		color:black;
+		font-family: Didot,serif;
+		font-size: 40px;
+		line-height: 60px;
+		letter-spacing: -.96px;
+		text-decoration: none;
+	}
+	
+	
+.propos
+	{
+		position: absolute;
+		top: 30px;
+		right: 50%;
+		text-align : center;
+		width: 20%;
+	} 
+.propos a 
+	{
+		
+		font-weight:600;
+		font-family: Didot,serif;
+		letter-spacing: -.96px;
+		color:#472a1f;
+		font-size: 20px;
+		text-decoration: none;
+		transition: all .55s ease;/*pour un petit effet de transition cool*/
+		border-bottom: 2px solid transparent; /*trait en bas blanc transparent comme ca on voit pas  */
+	}
+
+.propos a:hover
+	{
+	border-bottom:2px solid black;
+	}
+
+.compte 
+	{
+		position: absolute; /*pace l'ojet dans un nouveaux block */
+		top: 30px;
+		right: 	40%;
+		text-align : center;
+		color : black;
+		width: 20%;
+	 }
+.compte a
+	{
+		width: 20%;
+		font-weight:600;
+		font-family: Didot,serif;
+		letter-spacing: -.96px;
+		color:#472a1f;
+		font-size: 20px;
+		text-decoration: none;/*pour faire disparaitre le trait en bas du liens */
+		transition: all .55s ease;/*pour un petit effet de transition cool*/
+		border-bottom: 2px solid transparent; /*trait en bas blanc transparent comme ca on voit pas  */
+
+	}
+.compte a:hover
+	{
+		border-bottom:2px solid black;
+	}
+		
+			
+
+
+
+.connexion
+	{
+		
+		position :absolute;
+		top:30px;
+		right:20%;
+		text-align : center;
+		
+	 	 	
+	}
+.connexion a
+	{
+		
+		width: 20%;
+		font-weight:600;
+		font-family: Didot,serif;
+		letter-spacing: -.96px;
+		color:#472a1f;
+		font-size: 20px;
+		text-decoration: none;
+		transition: all .55s ease;/*pour un petit effet de transition cool*/
+		border-bottom: 2px solid transparent;
+			}
+.connexion a:hover
+	{
+		border-bottom:2px solid black;
+	}
+.inscription
+	{
+	position: absolute; 
+	top: 30px;
+	right:0%;
+	 text-align : center;
+	 color : black;
+	 width: 20%;
+	 height:40px;
+	
+}
+.inscription a 
+	{
+		width: 20%;
+		font-weight:600;
+		font-family: Didot,serif;
+		letter-spacing: -.96px;
+		color:#472a1f;
+		font-size: 20px;
+		text-decoration: none;
+		transition: all .55s ease;/*pour un petit effet de transition cool*/
+		border-bottom: 2px solid transparent;
+	}
+.inscription a:hover
+	{
+		border-bottom:2px solid black;
+	}
+
+.Home{
+	
+	color : #472a1f;
+	width:40%;
+	height:auto;
+	margin: 0px 400PX 0px 100px;
+	text-align:left;
+	
+	
+}
+
+.part2
+	{
+		
+		grid-area:f;
+		max-width:1280px;
+		
+	}
+	.part1
+	{
+		
+		
+		max-width:1280px;
+		
+	}
+.Home h1
+	{
+		font-family: Didot,serif;
+		font-size: 48px;
+		letter-spacing: -.96px;
+		text-align : left;
+		padding:10px;
+	}
+.Home-text
+	{
+		width:40%;
+		grid-area: g;
+		font-size : 10px;
+		text-align: left;
+		color: #475467;
+	}
+	
+.Home-text h1,h2
+	{
+		
+		font-family: courier New, monospace;
+	}
+
+.text1{
+		width:100%;
+		margin: 0px 0PX 10px 100px;
+	}
+	
+.text2
+	{
+		width:150%;
+		margin: 0px 0PX 10px 100px;
+	}
+	
+.text3 
+	{
+		display:inline-block;/*sinon le width et height ne s'aplique pas */
+		padding:14px 10Px ;
+		width:120px;
+		margin: 20px 400PX 10px 100px;
+		text-align:center;
+		font-family: humcomps;
+		font-size: 14px;
+		font-weight:500;
+		border-radius:10px;
+		background-color: #644231;
+		border :1px solid transparent;
+		color :#fff; 
+		text-decoration:none;
+		transition: all .55s ease;
+				
+	}
+		
+.text3:hover /* hover pour spécifier l'apparence d'un élément au moment où l'utilisateur le survole avec le pointeur*/
+	{
+		border:1px solid white;
+		color : #475467;
+		background: transparent;
+		transform : tanslateX(8px);
+	}
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) { 
+.page1 { grid-template-columns: 100%; grid-template-rows: 200px 1fr; }
+
+.head { top: 10px; left: 10px; }
+.head a {width:60%;font-size:40px; }
+.propos, .compte, .connexion, .inscription, { width: 50%; }
+
+.propos a, .compte a, .connexion a, .inscription a  { font-size: 18px; }
+
+
+.Home-text { font-size: 14px; }
+
+.text1, .text2 { margin: 0px 50px; }
+
+.text3 { padding: 10px 10px; width: 100px; margin: 10px 50px; } 
+.Home  {margin-left:50px;width:auto;}
+}
+@media screen and (max-width: 690px) { 
+.page1 { grid-template-columns: 100%; grid-template-rows: 200px 1fr; }
+.head { top: 10px; left: 10px; }
+.head a {width:60%;font-size:30px; }
+.propos, .compte, .connexion, .inscription, { width: 40%; }
+
+.propos a, .compte a, .connexion a, .inscription a  { font-size: 15px; }
+
+}
+
+
+@media screen and (max-width: 570px) {
+  .page1 {
+    grid-template-columns: 100%;
+    grid-template-rows: 200px 1fr;
+  }
+
+  .head {
+    top: 10px;
+    left: 70%;
+  }
+
+  .connexion {
+    top: 30px;
+    right: 15%;
+  }
+
+  .compte {
+    top: 30px;
+    right: 30%;
+  }
+
+  .propos {
+    top: 30px;
+    right: 45%;
+  }
+
+  .inscription {
+    top: 30px;
+    right: 0%;
+  }
+
+  .propos,
+  .compte,
+  .connexion,
+  .inscription {
+    width: 100%;
+  }
+
+  .propos a,
+  .compte a,
+  .connexion a,
+  .inscription a {
+    font-size: 16px;
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .Home-text {
+    font-size: 12px;
+  }
+
+  .text1,
+  .text2 {
+    margin: 0px 20px;
+  }
+
+  .text3 {
+    padding: 10px 10px;
+    width: 80px;
+    margin: 10px 20px;
+  }
+
+  .Home {
+    margin-left: 20px;
+    width: auto;
+  }
+}
+
+
+
+
+
+
+/*-----------PAGE CONNEXION/INSCRIPTION----------------*/
+
+
+body#connexion
+	{
+		min-height:100vh;
+		width:20%;
+		display:flex;
+		background: white;
+		
+		
+	}
+	.connexion2 
+	{
+		width:30%;
+		justify-content:center;
+		position : absolute;
+		right : 35%;
+		top : 20%;
+		
+	}
+	.connexion2 input 
+	{
+		text-align: left;
+	}
+	.connexion2 h2
+	{
+		font-size: 40px;
+		line-height: 38px;
+		text-align: left;
+		font-weight: 600;
+		font-family:Didot,serif;
+		color:#000;
+		margin: 0;
+		padding: 0;
+		border: 0;
+		margin: 0px 0px 10px 0px;
+		
+	}
+	.connexion2 h4
+	{
+		font-size: 18px;
+		line-height: 18px;
+		text-align: left;
+		color:#475467;
+		font-weight: 600;
+		margin: 0px 0px 20px 0px;
+		padding: 0;
+		border: 0;
+		font-family: humcomps;
+		
+	}
+	.sous-titre h4
+	{
+		font-size: 14px;
+		line-height: 20px;
+		font-weight: 600;
+		color : #344054;
+		font-family: humcomps;
+		margin:0;
+	}
+	.sous-titre 
+	{
+		text-align: left;
+		
+	}
+	.sous-titre input {
+	border : 1px solid #d0d5dd;;
+	border-radius:5px;
+	width:90%;
+	line-height: 25px;
+	margin: 0px 0px 25px 0px;
+	padding:10px;
+	}
+	.remenber
+	{
+		display:flex;
+		justify-content: space-between;
+		
+	}
+	.remenber .mdp_oublier
+	{
+		text-align:center;
+		width:200px;
+	}
+	.remenber label 
+	{
+		color : #101828;
+		font-family: humcomps;
+		font-size: 14px;
+		font-weight: 600;
+		text-align: left;
+		width:180px;
+		
+	}
+	.remenber a
+	{
+		
+		color:#6f4a38;
+		font-size: 14px;
+		text-align:right;
+		
+	}
+		 .message_alert p
+	{
+		color : red;
+		font-size:17px;
+		margin-bottom:10px;
+	}
+	
+	.submit
+	{
+		align-items: centers;
+		display:flex;
+		
+		
+		
+	}
+	.submit Button
+	{
+		padding:14px 10Px ;
+		max-width:340px;
+		font-family: humcomps;
+		font-size: 14px;
+		font-weight:500;
+		border-radius:10px;
+		background-color: #644231;
+		border :1px solid transparent;
+		color:white;
+	}
+	.new
+	{
+		color : #101828;
+		font-family: humcomps;
+		font-size: 14px;
+		font-weight: 500;
+		text-align: center;
+	}
+	
+	.new a
+	{
+		color:#6f4a38;
+		font-size: 14px;
+	}
+	
+	
+	
+	/*-----------PAGE A PROPOS----------------*/
+	
+	
+	body#about
+	{
+		margin:0;
+		
+		width:100vw;
+		height:300vh; 
+		align-items: center;
+		justify-content:center;
+		display : flex ;
+		flex-direction: columns;
+		
+	}
+	
+	
+	.content
+	{	
+		width:100%;
+		height:100vh;
+		background-color:white;
+		
+		left:0%;
+		top: 5%;
+		margin-bottom: 100px;
+		text-align:center;
+		align-items:center;
+		
+		
+	}
+	.content3 img
+	{
+		width: 100%;
+		max-width: 500px;
+		height:219px;
+		border-radius:3000px;
+		
+		align-items:center;
+		text-align:center;
+		
+		
+	}
+	.content1 span
+	{
+		color:#472a1f;
+		font-family: Didot,serif;
+		font-size: 40px;
+		line-height: 60px;
+		letter-spacing: -.96px;
+	}
+	.content1 
+	{
+		color:#344054;
+		font-family: Didot,serif;
+		font-weight: 600;
+		font-size: 40px;
+		line-height: 60px;
+		letter-spacing: -.96px;
+		text-align: center;
+		
+		
+	}
+	.content2 
+	{
+		width: 100%;
+		margin:10px 0px 50px 0px;
+		font-size: 18px;
+		line-height: 28px;
+		text-align: center;
+		font-family: ohne,Open Sans,sans-serif;
+		font-weight: 400;
+		color : #667085;
+		text-align:center;
+		padding:10px;
+	}
+	
+	
+	.team
+	{
+		width:100%;
+		max-width:1350px;
+		display : flex;
+		grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+		align-items: center;
+		gap:2rem;
+		text-align:center;
+		margin-top:2rem; 
+		margin-bottom:2rem;
+	
+		
+		
+	}
+	
+	.team img 
+	{
+		max-width:200px;
+		max-height:400px;
+		border-radius:15px;
+		margin-bottom: 15px;
+		margin-top: 30px;
+		text-align:center;
+	}
+	.titre h2
+	{
+		
+		color:#6f4a38;
+		text-align:center;
+		font-size:4rem;
+		text-align:center;
+		font-weight: 600;
+		font-family:Didot,serif;
+		color:#000;
+		margin : 30px;
+		
+		
+	}
+	.profil
+	{
+		
+		border-radius:15px;
+		background-color:#344054;
+		height:500px;
+		width:300px;
+		gap:1rem;
+		
+		
+	}
+	.profil h3,h5
+	{
+		color : white;
+		font-family:Didot,serif;
+	}
+	
+	
+	@media screen and (max-width: 978px)
+	{ 
+		.team {flex-direction: column;}
+		.page4{
+		margin : 0;
+		padding:0;
+		border:0;
+		height : 100%;
+		width:100%;}
+		.content{margin-top:400px;}
+		main {width:100%;}
+		
+	}
+	
+	
+	
+	
+	
+	/*-----------MENU D'ACCEUIL/tableau de bord----------------*/
+	
+	
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+
+	:root
+	{ /* permet de déclarer mes couleur personnalisées de maniere global */
+		--color-primary: #6C9BCF;
+		--color-danger: #FF0060;
+		--color-success: #1B9C85;
+		--color-warning: #F7D060;
+		--color-white: #fff;
+		--color-info-dark: #7d8da1;
+		--color-dark: #363949;
+		--color-light: rgba(132, 139, 200, 0.18);
+		--color-dark-variant: #677483;
+		--color-background: #f6f6f9;
+		--color-brown: #472a1f;
+		--card-border-radius: 2rem;
+		--border-radius-1: 0.4rem;
+		--border-radius-2: 1.2rem;
+
+		--card-padding: 1.8rem;
+		--padding-1: 1.2rem;
+
+		--box-shadow: 0 2rem 3rem var(--color-light);
+	}
+
+	.dark-mode-variables
+	{
+		--color-background: #181a1e;
+		--color-white: #202528;
+		--color-dark: #edeffd;
+		--color-dark-variant: #a3bdcc;
+		--color-light: rgba(0, 0, 0, 0.4);
+		--box-shadow: 0 2rem 3rem var(--color-light);
+	}
+	*
+	{
+		margin: 0;
+		padding: 0;
+		outline: 0;  /*comme un border*/
+		text-decoration: none; /* enlever le soulignement des liens*/
+		box-sizing: border-box; /* pour contenir les sous div dans la div principal */
+		appearance: 0;
+		border: 0;
+	}
+	body#dashboard
+	{
+		width: 100vw;
+		height: 100vh;
+		font-family: 'Poppins', sans-serif;
+		font-size: 0.88rem;
+		overflow-x: hidden; /*si texte depasse il est cacher*/
+		color: var(--color-dark);
+		background-color: var(--color-background);
+	}
+	
+	html#dashboard
+	{
+		font-size: 14px;
+	}
+	a{
+		color: var(--color-dark);
+	}
+	
+	
+	a
+	{
+		color: var(--color-dark);
+	}
+
+
+	h1
+	{
+		font-weight: 800;
+		font-size: 1.8rem;
+	}
+
+	h2
+	{
+		font-weight: 600;
+		font-size: 1.4rem;
+		font-family: Didot,serif;
+		
+	}
+.logo h2
+	{
+		font-family: Didot,serif;
+		letter-spacing: -.96px;
+		text-decoration: none;
+	}
+	h3
+	{
+		font-weight: 500;
+		font-size: 0.87rem;
+	}
+	small
+	{
+		font-size: 0.76rem;
+	}
+
+	p
+	{
+		color: var(--color-dark-variant);
+	}
+
+	b
+	{
+		color: var(--color-dark);
+	}	
+	.container
+	{
+		display: grid;
+		width: 96%;
+		margin: 0 auto;
+		gap: 1.8rem;
+		grid-template-columns: 12rem auto 23rem;
+	}
+	/*utilisations de aside car desja utiliser span il me fallait une autre balise different de span et div */ 
+	
+	aside .part_droite1
+	{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-top: 1.4rem;
+	}	
+
+	aside .part_droite1 .logo
+	{
+		display: flex;
+		gap: 0.5rem;
+
+	}
+	aside .part_droite1 .close
+	{
+		padding-right: 1rem;
+		display: none;
+	}
+	aside .part_droite2
+	{
+		display: flex;
+		flex-direction: column;
+		background-color: var(--color-white);
+			box-shadow: var(--box-shadow); /*pour l'effet d'ombre stylerrr*/
+		border-radius: 15px;
+		height: 88vh;
+		position: relative;
+		top: 1.5rem;
+		transition: all 0.3s ease;
+	}
+	
+	aside .part_droite2:hover
+	{	
+		
+	}
+	
+	aside .part_droite2 a
+	{
+		display: flex; /* comme ca je les align par default en ligne et peut les deplacer dans ce cas la non*/
+		align-items: center; /*placer le texte au millieu des petit icone */
+		color: var(--color-info-dark);
+		height: 4rem; /*espacer entre eux*/
+		gap: 1rem; /*espacement etre ligne et  colonnes*/ 
+		position: relative;
+		margin-left: 2rem;
+		transition: all 0.3s ease;
+	}
+	
+	aside .part_droite2 a span
+	{
+		font-size: 1.6rem;
+		transition: all 0.3s ease;
+	}
+	aside .part_droite2 a:last-child
+	{ /*last child pour cibler le dernier element soit logout que je veux moove*/
+		position: absolute;
+		bottom: 2rem;
+		width: 100%;
+	}
+	aside .part_droite2 a:hover
+	{
+		 color:  #0066ff;
+	}
+	aside .part_droite2 a:hover span{
+    margin-left: 0.6rem;
+	}
+	
+
+	main .recent_doc 
+	{
+    background-color: var(--color-white);
+    border-radius: var(--card-border-radius);
+    margin: 1rem 0px 3rem 0px;
+    box-shadow: var(--box-shadow);
+	width:100%;
+	height:200px;
+	padding: var(--card-padding);
+	
+	}
+	main h2 
+	{
+		margin-top:2rem;
+		margin-left:1rem;
+		
+	}
+	main .recent_doc th 
+	{
+		gap:30%;
+	}
+	
+	
+	main .upload_doc 
+	{
+    background-color: var(--color-white);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    margin-top: 1rem;
+    box-shadow: var(--box-shadow);
+    transition: all 0.3s ease;
+	width:100%;
+	
+	
+	}
+	.drop-case 
+	{
+		position: relative;
+		display: flex;
+		gap: 10px;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: 130px;
+		padding: 20px;
+		border-radius: 10px;
+		border: 2px dashed #555;
+		color: #444;
+		cursor: pointer;
+		transition: background .2s ease-in-out, border .2s ease-in-out;
+	}
+	.drop-case:hover,.drop-case
+	{
+		background: #eee;
+		border-color: #111;
+	}
+	
+	.drop-title 
+	{
+		color: #444;
+		font-size: 20px;
+		font-weight: bold;
+		text-align: center;
+		transition: color .2s ease-in-out;
+	}
+
+
+	input[type=file] 
+	{
+		width: 350px;
+		max-width: 100%;
+		color: #444;
+		padding: 5px;
+		background: #fff;
+		border-radius:3px;
+		border: 1px solid #555;
+	}
+
+
+	input[type=file]::file-selector-button 
+	{
+		margin-right: 20px;
+		border: none;
+		background: var(--color-brown);
+		padding: 15px 20px;
+		border-radius: 3px;
+		color: #fff;
+		cursor: pointer;
+		transition: background .2s ease-in-out;
+	}
+
+
+	input[type=file]::file-selector-button:hover 
+	{
+		background: #000;
+	}
+
+
+	button  
+	{
+		margin-top: 20PX;
+		width: 100%;
+		background-color: var(--color-brown);
+		color: #FFF;
+		border: 0;
+		padding: 15PX;
+		font-size: 16px;
+		border-radius: 6px;
+		cursor: pointer;
+		transition: background .2s ease-in-out;
+	}
+
+/*partit en haut a droite */
+
+
+	.right-section 
+	{
+		
+		height:40px;
+		margin-top:10px;
+	}
+	.right-section .info 
+	{
+		position:relative;
+		display :flex;
+		gap: 2rem; /*espacement etre hey et le mode jour nuit*/
+		align-items:center;
+	}
+	.right-section .info button //bouton menu pour le rendre invisible
+	{
+		display:none;
+	}
+	.right-section .dark-mode
+	{
+		display :flex;
+		background-color:white; 
+		align-items: center; /* centrer mid colonne*/
+		height: 1.6rem;
+		width: 4.2rem;
+		cursor: pointer;
+		border-radius: var(--border-radius-1);
+	}
+	.right-section .dark-mode span
+	{
+		font-size: 1.2rem;
+		width: 50%;
+		height: 100%;
+		display: flex;
+		align-items: center; /* pour mettre au millieu  collone*/
+		justify-content: center; /* pour center le texte au centre ligne */
+	}
+	.right-section .info .profile .info2  p
+	{
+		display: flex;
+		gap:2rem;
+		text-align: right;
+		margin-top:5px;
+	}
+	.right-section .info .profile
+	{
+		display:flex;
+		gap:2rem;
+		text-align:right;
+	}
+	.right-section .info .profile  .profile-photo{
+	display: flex;
+    width: 2.8rem;
+    height: 2.8rem;
+    border-radius: 50%;
+    overflow: hidden;
+	}
+	
+
+
+
+ /*page Bienvenu apres inscription */
+
+	.bienvenu_inscription
+	{
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		
+		
+	}
+	.text_pages_bienvenu_inscription h2
+	{
+		font-size: 4rem;
+		margin:250px 0px 30px 250px;
+		font-family: Playfair Display;
+		
+		
+	}
+	.text_pages_bienvenu_inscription h4
+	{
+		margin:0px 0px 80px 250px;
+	}
+	.text_pages_bienvenu_inscription span 
+	{
+		color : #6A3F07DE;
+		text-transform:uppercase;
+	}
+	.fleche_suivant span
+	{
+		margin-left : 1150px;
+		font-size: 8rem;
+		color:black;
+		
+	}
+	
+	
+	
+
+
+	main .recent_doc table
+	{
+		background-color: var(--color-white);
+		width: 100%;
+		table-layout: fixed; /*fixer la taille  de mon tableau */
+		
+		
+	   
+	}
+
+
+	main td 
+	{
+		height : 100%;
+		font-size:14px;
+		border-bottom: 1px solid var(--color-light);
+		color: var(--color-dark-variant);
+	}
+	
+	
+	
+	main table th
+	{
+		height: 0.5rem;
+		font-size:14px;
+		border-bottom: 1px solid var(--color-light);
+		color: var(--color-dark-variant);
+		
+	}
+
+	main table tbody tr:last-child td
+	{
+		border: none;
+	}
+
+	main .recent_doc td a
+	{
+		text-align: center;
+		display: block;
+		color: var(--color-primary);
+	}
+	main .recent_doc th a
+	{
+		text-align: center;
+		display: block;
+		color: var(--color-primary);
+	}
+	
+	main table
+	{
+		border-spacing: 10px 10px;
+	}
+	main .recent_doc .nom_doc
+	{
+	overflow: hidden; /* Cache le texte qui dépasse de la largeur maximale */
+	text-overflow: ellipsis; /* Affiche les points de suspension à la fin du texte tronqué */
+	white-space: nowrap;/* n'autorise ps le text a passer a l'autre ligne si text long */
+	}
+	
+	
+	main .mes_doc td a
+	{
+		text-align: center;
+		display: block;
+		color: var(--color-primary);
+	}
+	
+	main .mes_doc th a
+	{
+		text-align: left;
+		display: block;
+		color: var(--color-primary);
+		
+	}
+	
+	main table
+	{
+		border-spacing: 10px 10px;
+	}
+	main .mes_doc .nom_doc
+	{
+	overflow: hidden; /* Cache le texte qui dépasse de la largeur maximale */
+	text-overflow: ellipsis; /* Affiche les points de suspension à la fin du texte tronqué */
+	white-space: nowrap;/* n'autorise ps le text a passer a l'autre ligne si text long */
+	}
+	
+	
+	
+	main .mes_doc table
+	{
+		background-color: var(--color-white);
+		width:100%;
+		table-layout: auto; /*fixer la taille  de mon tableau */
+		
+		
+	   
+	}
+	main .mes_doc 
+	{
+    background-color: var(--color-white);
+    border-radius: var(--card-border-radius);
+    margin: 3rem 0px 3rem 0px;
+    box-shadow: var(--box-shadow);
+	width:1050px;
+	height:100%;
+	padding: var(--card-padding);
+	}
+	.search_bar
+	{
+		display:flex;
+		align-items:center;
+		text-align:center;
+		margin-top:30px;
+		
+	}
+	.search_bar input{
+		 height:40px;
+		 width:1000px;
+	}
+	
+	.mes_doc .bouton_doc 
+	{
+		width:260px;
+		text-align:center;
+		
+	}
+		.mes_doc .probleme form
+	{
+		width:260px;
+	}
+	.mes_doc .probleme .nom_doc
+	{
+		text-align:right;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	body #setting{
+    color: #8e9194;
+    background-color: #f4f6f9;
+	}
+	.main_setting
+	{
+		width:100%;
+		margin-bottom:10px;
+	}
+	
+	.main_setting strong
+	{
+		margin-top:  
+	}
+	.contain
+	{
+		background-color:white;
+	}
+	.contain .c
+	{
+		text-align:center;
+	}
+	.contain img
+	{
+		width:100px;
+		height:100px;
+	}
+	.contain h4
+	{
+		margin-top:20px;
+	}
+	.b
+	{
+		display:flex;
+		flex-direction: column;
+	}
+	.b input
+	{
+		border:1px solid black;
+		border-radius:10%;
+		height:30px;
+	}
+	.d
+	{
+		text-align:center;
+		gap: 10%;
+	}
+	.formulaire
+	{
+		margin-top:30px;
+		text-align:center;
+	}
+	
+	.formulaire label
+	{
+		margin-left:30px;
+		text-align:center;
+	}
+	
+	.main_setting
+	{
+		background-color:white;
+		box-shadow: var(--box-shadow);
+		margin-top:30px;
+		border-radius:30px;
+	}
+	
+	.b h2
+	{
+		text-align:center;
+		margin-bottom:10px;
+	}
